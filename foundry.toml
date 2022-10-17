@@ -1,0 +1,10 @@
+[profile.default]
+src = 'contracts'
+out = 'artifacts'
+libs = ['lib']
+
+[profile.dfkchain]
+eth-rpc-url = "https://subnets.avax.network/defi-kingdoms/dfk-chain/rpc"
+chain_id = 53935
+
+# See more config options https://github.com/foundry-rs/foundry/tree/master/config

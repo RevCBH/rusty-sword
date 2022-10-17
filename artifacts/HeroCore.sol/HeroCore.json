@@ -1,0 +1,2980 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_id",
+          "type": "uint256"
+        }
+      ],
+      "name": "getHero",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "summonedTime",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "nextSummonTime",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "summonerId",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "assistantId",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "summons",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "maxSummons",
+                  "type": "uint32"
+                }
+              ],
+              "internalType": "struct SummoningInfo",
+              "name": "summoningInfo",
+              "type": "tuple"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "statGenes",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "visualGenes",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint8",
+                  "name": "rarity",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "shiny",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "generation",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "firstName",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "lastName",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint8",
+                  "name": "shinyStyle",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "uint8",
+                  "name": "class",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "uint8",
+                  "name": "subClass",
+                  "type": "uint8"
+                }
+              ],
+              "internalType": "struct HeroInfo",
+              "name": "info",
+              "type": "tuple"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "staminaFullAt",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "hpFullAt",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "mpFullAt",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "level",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint64",
+                  "name": "xp",
+                  "type": "uint64"
+                },
+                {
+                  "internalType": "address",
+                  "name": "currentQuest",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint8",
+                  "name": "sp",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "uint8",
+                  "name": "status",
+                  "type": "uint8"
+                }
+              ],
+              "internalType": "struct HeroState",
+              "name": "state",
+              "type": "tuple"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint16",
+                  "name": "strength",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "intelligence",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "wisdom",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "luck",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "agility",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "vitality",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "endurance",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "dexterity",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "hp",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "mp",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "stamina",
+                  "type": "uint16"
+                }
+              ],
+              "internalType": "struct HeroStats",
+              "name": "stats",
+              "type": "tuple"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint16",
+                  "name": "strength",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "intelligence",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "wisdom",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "luck",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "agility",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "vitality",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "endurance",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "dexterity",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "hpSm",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "hpRg",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "hpLg",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "mpSm",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "mpRg",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "mpLg",
+                  "type": "uint16"
+                }
+              ],
+              "internalType": "struct HeroStatGrowth",
+              "name": "primaryStatGrowth",
+              "type": "tuple"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint16",
+                  "name": "strength",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "intelligence",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "wisdom",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "luck",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "agility",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "vitality",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "endurance",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "dexterity",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "hpSm",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "hpRg",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "hpLg",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "mpSm",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "mpRg",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "mpLg",
+                  "type": "uint16"
+                }
+              ],
+              "internalType": "struct HeroStatGrowth",
+              "name": "secondaryStatGrowth",
+              "type": "tuple"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint16",
+                  "name": "mining",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "gardening",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "foraging",
+                  "type": "uint16"
+                },
+                {
+                  "internalType": "uint16",
+                  "name": "fishing",
+                  "type": "uint16"
+                }
+              ],
+              "internalType": "struct HeroProfessions",
+              "name": "professions",
+              "type": "tuple"
+            }
+          ],
+          "internalType": "struct Hero",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_address",
+          "type": "address"
+        }
+      ],
+      "name": "getUserHeroes",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "getHero(uint256)": "21d80111",
+    "getUserHeroes(address)": "cdf7d856"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_id\",\"type\":\"uint256\"}],\"name\":\"getHero\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"components\":[{\"internalType\":\"uint256\",\"name\":\"summonedTime\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"nextSummonTime\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"summonerId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"assistantId\",\"type\":\"uint256\"},{\"internalType\":\"uint32\",\"name\":\"summons\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"maxSummons\",\"type\":\"uint32\"}],\"internalType\":\"struct SummoningInfo\",\"name\":\"summoningInfo\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"uint256\",\"name\":\"statGenes\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"visualGenes\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"rarity\",\"type\":\"uint8\"},{\"internalType\":\"bool\",\"name\":\"shiny\",\"type\":\"bool\"},{\"internalType\":\"uint16\",\"name\":\"generation\",\"type\":\"uint16\"},{\"internalType\":\"uint32\",\"name\":\"firstName\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"lastName\",\"type\":\"uint32\"},{\"internalType\":\"uint8\",\"name\":\"shinyStyle\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"class\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"subClass\",\"type\":\"uint8\"}],\"internalType\":\"struct HeroInfo\",\"name\":\"info\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"uint256\",\"name\":\"staminaFullAt\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"hpFullAt\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"mpFullAt\",\"type\":\"uint256\"},{\"internalType\":\"uint16\",\"name\":\"level\",\"type\":\"uint16\"},{\"internalType\":\"uint64\",\"name\":\"xp\",\"type\":\"uint64\"},{\"internalType\":\"address\",\"name\":\"currentQuest\",\"type\":\"address\"},{\"internalType\":\"uint8\",\"name\":\"sp\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"status\",\"type\":\"uint8\"}],\"internalType\":\"struct HeroState\",\"name\":\"state\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"uint16\",\"name\":\"strength\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"intelligence\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"wisdom\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"luck\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"agility\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"vitality\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"endurance\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"dexterity\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"hp\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"mp\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"stamina\",\"type\":\"uint16\"}],\"internalType\":\"struct HeroStats\",\"name\":\"stats\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"uint16\",\"name\":\"strength\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"intelligence\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"wisdom\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"luck\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"agility\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"vitality\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"endurance\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"dexterity\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"hpSm\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"hpRg\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"hpLg\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"mpSm\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"mpRg\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"mpLg\",\"type\":\"uint16\"}],\"internalType\":\"struct HeroStatGrowth\",\"name\":\"primaryStatGrowth\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"uint16\",\"name\":\"strength\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"intelligence\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"wisdom\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"luck\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"agility\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"vitality\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"endurance\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"dexterity\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"hpSm\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"hpRg\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"hpLg\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"mpSm\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"mpRg\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"mpLg\",\"type\":\"uint16\"}],\"internalType\":\"struct HeroStatGrowth\",\"name\":\"secondaryStatGrowth\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"uint16\",\"name\":\"mining\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"gardening\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"foraging\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"fishing\",\"type\":\"uint16\"}],\"internalType\":\"struct HeroProfessions\",\"name\":\"professions\",\"type\":\"tuple\"}],\"internalType\":\"struct Hero\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"getUserHeroes\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/HeroCore.sol\":\"HeroCore\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"contracts/HeroCore.sol\":{\"keccak256\":\"0x5e450de431a29846999927c5cbda774dff399d443c67c312f888fdd7ef51ee68\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://db0f85aa3096a1894d0a4ff0dcf1fd66f3f4074bed174e429ef9561c2827c1e6\",\"dweb:/ipfs/QmX3M8GDLonW1TzY6tYLS47yL5SCZssReAagkEsEWPgXHw\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "_id",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getHero",
+          "outputs": [
+            {
+              "internalType": "struct Hero",
+              "name": "",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "id",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "struct SummoningInfo",
+                  "name": "summoningInfo",
+                  "type": "tuple",
+                  "components": [
+                    {
+                      "internalType": "uint256",
+                      "name": "summonedTime",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "uint256",
+                      "name": "nextSummonTime",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "uint256",
+                      "name": "summonerId",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "uint256",
+                      "name": "assistantId",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "uint32",
+                      "name": "summons",
+                      "type": "uint32"
+                    },
+                    {
+                      "internalType": "uint32",
+                      "name": "maxSummons",
+                      "type": "uint32"
+                    }
+                  ]
+                },
+                {
+                  "internalType": "struct HeroInfo",
+                  "name": "info",
+                  "type": "tuple",
+                  "components": [
+                    {
+                      "internalType": "uint256",
+                      "name": "statGenes",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "uint256",
+                      "name": "visualGenes",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "uint8",
+                      "name": "rarity",
+                      "type": "uint8"
+                    },
+                    {
+                      "internalType": "bool",
+                      "name": "shiny",
+                      "type": "bool"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "generation",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint32",
+                      "name": "firstName",
+                      "type": "uint32"
+                    },
+                    {
+                      "internalType": "uint32",
+                      "name": "lastName",
+                      "type": "uint32"
+                    },
+                    {
+                      "internalType": "uint8",
+                      "name": "shinyStyle",
+                      "type": "uint8"
+                    },
+                    {
+                      "internalType": "uint8",
+                      "name": "class",
+                      "type": "uint8"
+                    },
+                    {
+                      "internalType": "uint8",
+                      "name": "subClass",
+                      "type": "uint8"
+                    }
+                  ]
+                },
+                {
+                  "internalType": "struct HeroState",
+                  "name": "state",
+                  "type": "tuple",
+                  "components": [
+                    {
+                      "internalType": "uint256",
+                      "name": "staminaFullAt",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "uint256",
+                      "name": "hpFullAt",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "uint256",
+                      "name": "mpFullAt",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "level",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint64",
+                      "name": "xp",
+                      "type": "uint64"
+                    },
+                    {
+                      "internalType": "address",
+                      "name": "currentQuest",
+                      "type": "address"
+                    },
+                    {
+                      "internalType": "uint8",
+                      "name": "sp",
+                      "type": "uint8"
+                    },
+                    {
+                      "internalType": "uint8",
+                      "name": "status",
+                      "type": "uint8"
+                    }
+                  ]
+                },
+                {
+                  "internalType": "struct HeroStats",
+                  "name": "stats",
+                  "type": "tuple",
+                  "components": [
+                    {
+                      "internalType": "uint16",
+                      "name": "strength",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "intelligence",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "wisdom",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "luck",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "agility",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "vitality",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "endurance",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "dexterity",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "hp",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "mp",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "stamina",
+                      "type": "uint16"
+                    }
+                  ]
+                },
+                {
+                  "internalType": "struct HeroStatGrowth",
+                  "name": "primaryStatGrowth",
+                  "type": "tuple",
+                  "components": [
+                    {
+                      "internalType": "uint16",
+                      "name": "strength",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "intelligence",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "wisdom",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "luck",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "agility",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "vitality",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "endurance",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "dexterity",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "hpSm",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "hpRg",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "hpLg",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "mpSm",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "mpRg",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "mpLg",
+                      "type": "uint16"
+                    }
+                  ]
+                },
+                {
+                  "internalType": "struct HeroStatGrowth",
+                  "name": "secondaryStatGrowth",
+                  "type": "tuple",
+                  "components": [
+                    {
+                      "internalType": "uint16",
+                      "name": "strength",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "intelligence",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "wisdom",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "luck",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "agility",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "vitality",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "endurance",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "dexterity",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "hpSm",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "hpRg",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "hpLg",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "mpSm",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "mpRg",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "mpLg",
+                      "type": "uint16"
+                    }
+                  ]
+                },
+                {
+                  "internalType": "struct HeroProfessions",
+                  "name": "professions",
+                  "type": "tuple",
+                  "components": [
+                    {
+                      "internalType": "uint16",
+                      "name": "mining",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "gardening",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "foraging",
+                      "type": "uint16"
+                    },
+                    {
+                      "internalType": "uint16",
+                      "name": "fishing",
+                      "type": "uint16"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_address",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getUserHeroes",
+          "outputs": [
+            {
+              "internalType": "uint256[]",
+              "name": "",
+              "type": "uint256[]"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/HeroCore.sol": "HeroCore"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/HeroCore.sol": {
+        "keccak256": "0x5e450de431a29846999927c5cbda774dff399d443c67c312f888fdd7ef51ee68",
+        "urls": [
+          "bzz-raw://db0f85aa3096a1894d0a4ff0dcf1fd66f3f4074bed174e429ef9561c2827c1e6",
+          "dweb:/ipfs/QmX3M8GDLonW1TzY6tYLS47yL5SCZssReAagkEsEWPgXHw"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/HeroCore.sol",
+    "id": 155,
+    "exportedSymbols": {
+      "Hero": [
+        42
+      ],
+      "HeroCore": [
+        18
+      ],
+      "HeroInfo": [
+        76
+      ],
+      "HeroProfessions": [
+        154
+      ],
+      "HeroStatGrowth": [
+        145
+      ],
+      "HeroState": [
+        93
+      ],
+      "HeroStats": [
+        116
+      ],
+      "SummoningInfo": [
+        55
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:1741:0",
+    "nodes": [
+      {
+        "id": 1,
+        "nodeType": "PragmaDirective",
+        "src": "39:24:0",
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 18,
+        "nodeType": "ContractDefinition",
+        "src": "65:205:0",
+        "nodes": [
+          {
+            "id": 9,
+            "nodeType": "FunctionDefinition",
+            "src": "90:106:0",
+            "functionSelector": "cdf7d856",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getUserHeroes",
+            "nameLocation": "99:13:0",
+            "parameters": {
+              "id": 4,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3,
+                  "mutability": "mutable",
+                  "name": "_address",
+                  "nameLocation": "121:8:0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9,
+                  "src": "113:16:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "113:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "112:18:0"
+            },
+            "returnParameters": {
+              "id": 8,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9,
+                  "src": "178:16:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 5,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "178:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 6,
+                    "nodeType": "ArrayTypeName",
+                    "src": "178:9:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "177:18:0"
+            },
+            "scope": 18,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 17,
+            "nodeType": "FunctionDefinition",
+            "src": "202:66:0",
+            "functionSelector": "21d80111",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getHero",
+            "nameLocation": "211:7:0",
+            "parameters": {
+              "id": 12,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11,
+                  "mutability": "mutable",
+                  "name": "_id",
+                  "nameLocation": "227:3:0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 17,
+                  "src": "219:11:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "219:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "218:13:0"
+            },
+            "returnParameters": {
+              "id": 16,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 17,
+                  "src": "255:11:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Hero_$42_memory_ptr",
+                    "typeString": "struct Hero"
+                  },
+                  "typeName": {
+                    "id": 14,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 13,
+                      "name": "Hero",
+                      "nameLocations": [
+                        "255:4:0"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 42,
+                      "src": "255:4:0"
+                    },
+                    "referencedDeclaration": 42,
+                    "src": "255:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Hero_$42_storage_ptr",
+                      "typeString": "struct Hero"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "254:13:0"
+            },
+            "scope": 18,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "HeroCore",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          18
+        ],
+        "name": "HeroCore",
+        "nameLocation": "75:8:0",
+        "scope": 155,
+        "usedErrors": []
+      },
+      {
+        "id": 42,
+        "nodeType": "StructDefinition",
+        "src": "272:236:0",
+        "canonicalName": "Hero",
+        "members": [
+          {
+            "constant": false,
+            "id": 20,
+            "mutability": "mutable",
+            "name": "id",
+            "nameLocation": "298:2:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 42,
+            "src": "290:10:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 19,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "290:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 23,
+            "mutability": "mutable",
+            "name": "summoningInfo",
+            "nameLocation": "320:13:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 42,
+            "src": "306:27:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_SummoningInfo_$55_storage_ptr",
+              "typeString": "struct SummoningInfo"
+            },
+            "typeName": {
+              "id": 22,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 21,
+                "name": "SummoningInfo",
+                "nameLocations": [
+                  "306:13:0"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 55,
+                "src": "306:13:0"
+              },
+              "referencedDeclaration": 55,
+              "src": "306:13:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_SummoningInfo_$55_storage_ptr",
+                "typeString": "struct SummoningInfo"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 26,
+            "mutability": "mutable",
+            "name": "info",
+            "nameLocation": "348:4:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 42,
+            "src": "339:13:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_HeroInfo_$76_storage_ptr",
+              "typeString": "struct HeroInfo"
+            },
+            "typeName": {
+              "id": 25,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 24,
+                "name": "HeroInfo",
+                "nameLocations": [
+                  "339:8:0"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 76,
+                "src": "339:8:0"
+              },
+              "referencedDeclaration": 76,
+              "src": "339:8:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_HeroInfo_$76_storage_ptr",
+                "typeString": "struct HeroInfo"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 29,
+            "mutability": "mutable",
+            "name": "state",
+            "nameLocation": "368:5:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 42,
+            "src": "358:15:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_HeroState_$93_storage_ptr",
+              "typeString": "struct HeroState"
+            },
+            "typeName": {
+              "id": 28,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 27,
+                "name": "HeroState",
+                "nameLocations": [
+                  "358:9:0"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 93,
+                "src": "358:9:0"
+              },
+              "referencedDeclaration": 93,
+              "src": "358:9:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_HeroState_$93_storage_ptr",
+                "typeString": "struct HeroState"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 32,
+            "mutability": "mutable",
+            "name": "stats",
+            "nameLocation": "389:5:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 42,
+            "src": "379:15:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_HeroStats_$116_storage_ptr",
+              "typeString": "struct HeroStats"
+            },
+            "typeName": {
+              "id": 31,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 30,
+                "name": "HeroStats",
+                "nameLocations": [
+                  "379:9:0"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 116,
+                "src": "379:9:0"
+              },
+              "referencedDeclaration": 116,
+              "src": "379:9:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_HeroStats_$116_storage_ptr",
+                "typeString": "struct HeroStats"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 35,
+            "mutability": "mutable",
+            "name": "primaryStatGrowth",
+            "nameLocation": "415:17:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 42,
+            "src": "400:32:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_HeroStatGrowth_$145_storage_ptr",
+              "typeString": "struct HeroStatGrowth"
+            },
+            "typeName": {
+              "id": 34,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 33,
+                "name": "HeroStatGrowth",
+                "nameLocations": [
+                  "400:14:0"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 145,
+                "src": "400:14:0"
+              },
+              "referencedDeclaration": 145,
+              "src": "400:14:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_HeroStatGrowth_$145_storage_ptr",
+                "typeString": "struct HeroStatGrowth"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 38,
+            "mutability": "mutable",
+            "name": "secondaryStatGrowth",
+            "nameLocation": "453:19:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 42,
+            "src": "438:34:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_HeroStatGrowth_$145_storage_ptr",
+              "typeString": "struct HeroStatGrowth"
+            },
+            "typeName": {
+              "id": 37,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 36,
+                "name": "HeroStatGrowth",
+                "nameLocations": [
+                  "438:14:0"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 145,
+                "src": "438:14:0"
+              },
+              "referencedDeclaration": 145,
+              "src": "438:14:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_HeroStatGrowth_$145_storage_ptr",
+                "typeString": "struct HeroStatGrowth"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 41,
+            "mutability": "mutable",
+            "name": "professions",
+            "nameLocation": "494:11:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 42,
+            "src": "478:27:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_HeroProfessions_$154_storage_ptr",
+              "typeString": "struct HeroProfessions"
+            },
+            "typeName": {
+              "id": 40,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 39,
+                "name": "HeroProfessions",
+                "nameLocations": [
+                  "478:15:0"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 154,
+                "src": "478:15:0"
+              },
+              "referencedDeclaration": 154,
+              "src": "478:15:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_HeroProfessions_$154_storage_ptr",
+                "typeString": "struct HeroProfessions"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "Hero",
+        "nameLocation": "279:4:0",
+        "scope": 155,
+        "visibility": "public"
+      },
+      {
+        "id": 55,
+        "nodeType": "StructDefinition",
+        "src": "510:170:0",
+        "canonicalName": "SummoningInfo",
+        "members": [
+          {
+            "constant": false,
+            "id": 44,
+            "mutability": "mutable",
+            "name": "summonedTime",
+            "nameLocation": "545:12:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 55,
+            "src": "537:20:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 43,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "537:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 46,
+            "mutability": "mutable",
+            "name": "nextSummonTime",
+            "nameLocation": "571:14:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 55,
+            "src": "563:22:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 45,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "563:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 48,
+            "mutability": "mutable",
+            "name": "summonerId",
+            "nameLocation": "599:10:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 55,
+            "src": "591:18:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 47,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "591:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 50,
+            "mutability": "mutable",
+            "name": "assistantId",
+            "nameLocation": "623:11:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 55,
+            "src": "615:19:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 49,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "615:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 52,
+            "mutability": "mutable",
+            "name": "summons",
+            "nameLocation": "647:7:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 55,
+            "src": "640:14:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint32",
+              "typeString": "uint32"
+            },
+            "typeName": {
+              "id": 51,
+              "name": "uint32",
+              "nodeType": "ElementaryTypeName",
+              "src": "640:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint32",
+                "typeString": "uint32"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 54,
+            "mutability": "mutable",
+            "name": "maxSummons",
+            "nameLocation": "667:10:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 55,
+            "src": "660:17:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint32",
+              "typeString": "uint32"
+            },
+            "typeName": {
+              "id": 53,
+              "name": "uint32",
+              "nodeType": "ElementaryTypeName",
+              "src": "660:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint32",
+                "typeString": "uint32"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "SummoningInfo",
+        "nameLocation": "517:13:0",
+        "scope": 155,
+        "visibility": "public"
+      },
+      {
+        "id": 76,
+        "nodeType": "StructDefinition",
+        "src": "682:245:0",
+        "canonicalName": "HeroInfo",
+        "members": [
+          {
+            "constant": false,
+            "id": 57,
+            "mutability": "mutable",
+            "name": "statGenes",
+            "nameLocation": "712:9:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 76,
+            "src": "704:17:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 56,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "704:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 59,
+            "mutability": "mutable",
+            "name": "visualGenes",
+            "nameLocation": "735:11:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 76,
+            "src": "727:19:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 58,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "727:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 61,
+            "mutability": "mutable",
+            "name": "rarity",
+            "nameLocation": "777:6:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 76,
+            "src": "771:12:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint8",
+              "typeString": "uint8"
+            },
+            "typeName": {
+              "id": 60,
+              "name": "uint8",
+              "nodeType": "ElementaryTypeName",
+              "src": "771:5:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint8",
+                "typeString": "uint8"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 63,
+            "mutability": "mutable",
+            "name": "shiny",
+            "nameLocation": "794:5:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 76,
+            "src": "789:10:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 62,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "789:4:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 65,
+            "mutability": "mutable",
+            "name": "generation",
+            "nameLocation": "812:10:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 76,
+            "src": "805:17:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 64,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "805:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 67,
+            "mutability": "mutable",
+            "name": "firstName",
+            "nameLocation": "835:9:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 76,
+            "src": "828:16:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint32",
+              "typeString": "uint32"
+            },
+            "typeName": {
+              "id": 66,
+              "name": "uint32",
+              "nodeType": "ElementaryTypeName",
+              "src": "828:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint32",
+                "typeString": "uint32"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 69,
+            "mutability": "mutable",
+            "name": "lastName",
+            "nameLocation": "857:8:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 76,
+            "src": "850:15:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint32",
+              "typeString": "uint32"
+            },
+            "typeName": {
+              "id": 68,
+              "name": "uint32",
+              "nodeType": "ElementaryTypeName",
+              "src": "850:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint32",
+                "typeString": "uint32"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 71,
+            "mutability": "mutable",
+            "name": "shinyStyle",
+            "nameLocation": "877:10:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 76,
+            "src": "871:16:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint8",
+              "typeString": "uint8"
+            },
+            "typeName": {
+              "id": 70,
+              "name": "uint8",
+              "nodeType": "ElementaryTypeName",
+              "src": "871:5:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint8",
+                "typeString": "uint8"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 73,
+            "mutability": "mutable",
+            "name": "class",
+            "nameLocation": "899:5:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 76,
+            "src": "893:11:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint8",
+              "typeString": "uint8"
+            },
+            "typeName": {
+              "id": 72,
+              "name": "uint8",
+              "nodeType": "ElementaryTypeName",
+              "src": "893:5:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint8",
+                "typeString": "uint8"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 75,
+            "mutability": "mutable",
+            "name": "subClass",
+            "nameLocation": "916:8:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 76,
+            "src": "910:14:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint8",
+              "typeString": "uint8"
+            },
+            "typeName": {
+              "id": 74,
+              "name": "uint8",
+              "nodeType": "ElementaryTypeName",
+              "src": "910:5:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint8",
+                "typeString": "uint8"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "HeroInfo",
+        "nameLocation": "689:8:0",
+        "scope": 155,
+        "visibility": "public"
+      },
+      {
+        "id": 93,
+        "nodeType": "StructDefinition",
+        "src": "929:205:0",
+        "canonicalName": "HeroState",
+        "members": [
+          {
+            "constant": false,
+            "id": 78,
+            "mutability": "mutable",
+            "name": "staminaFullAt",
+            "nameLocation": "960:13:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 93,
+            "src": "952:21:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 77,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "952:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 80,
+            "mutability": "mutable",
+            "name": "hpFullAt",
+            "nameLocation": "987:8:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 93,
+            "src": "979:16:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 79,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "979:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 82,
+            "mutability": "mutable",
+            "name": "mpFullAt",
+            "nameLocation": "1009:8:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 93,
+            "src": "1001:16:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 81,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1001:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 84,
+            "mutability": "mutable",
+            "name": "level",
+            "nameLocation": "1030:5:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 93,
+            "src": "1023:12:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 83,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "1023:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 86,
+            "mutability": "mutable",
+            "name": "xp",
+            "nameLocation": "1048:2:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 93,
+            "src": "1041:9:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint64",
+              "typeString": "uint64"
+            },
+            "typeName": {
+              "id": 85,
+              "name": "uint64",
+              "nodeType": "ElementaryTypeName",
+              "src": "1041:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint64",
+                "typeString": "uint64"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 88,
+            "mutability": "mutable",
+            "name": "currentQuest",
+            "nameLocation": "1064:12:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 93,
+            "src": "1056:20:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 87,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "1056:7:0",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 90,
+            "mutability": "mutable",
+            "name": "sp",
+            "nameLocation": "1088:2:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 93,
+            "src": "1082:8:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint8",
+              "typeString": "uint8"
+            },
+            "typeName": {
+              "id": 89,
+              "name": "uint8",
+              "nodeType": "ElementaryTypeName",
+              "src": "1082:5:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint8",
+                "typeString": "uint8"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 92,
+            "mutability": "mutable",
+            "name": "status",
+            "nameLocation": "1125:6:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 93,
+            "src": "1119:12:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint8",
+              "typeString": "uint8"
+            },
+            "typeName": {
+              "id": 91,
+              "name": "uint8",
+              "nodeType": "ElementaryTypeName",
+              "src": "1119:5:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint8",
+                "typeString": "uint8"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "HeroState",
+        "nameLocation": "936:9:0",
+        "scope": 155,
+        "visibility": "public"
+      },
+      {
+        "id": 116,
+        "nodeType": "StructDefinition",
+        "src": "1136:237:0",
+        "canonicalName": "HeroStats",
+        "members": [
+          {
+            "constant": false,
+            "id": 95,
+            "mutability": "mutable",
+            "name": "strength",
+            "nameLocation": "1166:8:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 116,
+            "src": "1159:15:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 94,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "1159:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 97,
+            "mutability": "mutable",
+            "name": "intelligence",
+            "nameLocation": "1187:12:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 116,
+            "src": "1180:19:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 96,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "1180:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 99,
+            "mutability": "mutable",
+            "name": "wisdom",
+            "nameLocation": "1212:6:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 116,
+            "src": "1205:13:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 98,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "1205:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 101,
+            "mutability": "mutable",
+            "name": "luck",
+            "nameLocation": "1231:4:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 116,
+            "src": "1224:11:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 100,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "1224:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 103,
+            "mutability": "mutable",
+            "name": "agility",
+            "nameLocation": "1248:7:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 116,
+            "src": "1241:14:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 102,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "1241:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 105,
+            "mutability": "mutable",
+            "name": "vitality",
+            "nameLocation": "1268:8:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 116,
+            "src": "1261:15:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 104,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "1261:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 107,
+            "mutability": "mutable",
+            "name": "endurance",
+            "nameLocation": "1289:9:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 116,
+            "src": "1282:16:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 106,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "1282:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 109,
+            "mutability": "mutable",
+            "name": "dexterity",
+            "nameLocation": "1311:9:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 116,
+            "src": "1304:16:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 108,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "1304:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 111,
+            "mutability": "mutable",
+            "name": "hp",
+            "nameLocation": "1333:2:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 116,
+            "src": "1326:9:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 110,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "1326:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 113,
+            "mutability": "mutable",
+            "name": "mp",
+            "nameLocation": "1348:2:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 116,
+            "src": "1341:9:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 112,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "1341:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 115,
+            "mutability": "mutable",
+            "name": "stamina",
+            "nameLocation": "1363:7:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 116,
+            "src": "1356:14:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 114,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "1356:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "HeroStats",
+        "nameLocation": "1143:9:0",
+        "scope": 155,
+        "visibility": "public"
+      },
+      {
+        "id": 145,
+        "nodeType": "StructDefinition",
+        "src": "1375:294:0",
+        "canonicalName": "HeroStatGrowth",
+        "members": [
+          {
+            "constant": false,
+            "id": 118,
+            "mutability": "mutable",
+            "name": "strength",
+            "nameLocation": "1410:8:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 145,
+            "src": "1403:15:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 117,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "1403:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 120,
+            "mutability": "mutable",
+            "name": "intelligence",
+            "nameLocation": "1431:12:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 145,
+            "src": "1424:19:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 119,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "1424:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 122,
+            "mutability": "mutable",
+            "name": "wisdom",
+            "nameLocation": "1456:6:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 145,
+            "src": "1449:13:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 121,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "1449:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 124,
+            "mutability": "mutable",
+            "name": "luck",
+            "nameLocation": "1475:4:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 145,
+            "src": "1468:11:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 123,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "1468:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 126,
+            "mutability": "mutable",
+            "name": "agility",
+            "nameLocation": "1492:7:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 145,
+            "src": "1485:14:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 125,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "1485:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 128,
+            "mutability": "mutable",
+            "name": "vitality",
+            "nameLocation": "1512:8:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 145,
+            "src": "1505:15:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 127,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "1505:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 130,
+            "mutability": "mutable",
+            "name": "endurance",
+            "nameLocation": "1533:9:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 145,
+            "src": "1526:16:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 129,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "1526:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 132,
+            "mutability": "mutable",
+            "name": "dexterity",
+            "nameLocation": "1555:9:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 145,
+            "src": "1548:16:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 131,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "1548:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 134,
+            "mutability": "mutable",
+            "name": "hpSm",
+            "nameLocation": "1577:4:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 145,
+            "src": "1570:11:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 133,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "1570:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 136,
+            "mutability": "mutable",
+            "name": "hpRg",
+            "nameLocation": "1594:4:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 145,
+            "src": "1587:11:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 135,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "1587:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 138,
+            "mutability": "mutable",
+            "name": "hpLg",
+            "nameLocation": "1611:4:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 145,
+            "src": "1604:11:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 137,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "1604:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 140,
+            "mutability": "mutable",
+            "name": "mpSm",
+            "nameLocation": "1628:4:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 145,
+            "src": "1621:11:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 139,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "1621:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 142,
+            "mutability": "mutable",
+            "name": "mpRg",
+            "nameLocation": "1645:4:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 145,
+            "src": "1638:11:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 141,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "1638:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 144,
+            "mutability": "mutable",
+            "name": "mpLg",
+            "nameLocation": "1662:4:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 145,
+            "src": "1655:11:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 143,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "1655:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "HeroStatGrowth",
+        "nameLocation": "1382:14:0",
+        "scope": 155,
+        "visibility": "public"
+      },
+      {
+        "id": 154,
+        "nodeType": "StructDefinition",
+        "src": "1671:108:0",
+        "canonicalName": "HeroProfessions",
+        "members": [
+          {
+            "constant": false,
+            "id": 147,
+            "mutability": "mutable",
+            "name": "mining",
+            "nameLocation": "1707:6:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 154,
+            "src": "1700:13:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 146,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "1700:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 149,
+            "mutability": "mutable",
+            "name": "gardening",
+            "nameLocation": "1726:9:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 154,
+            "src": "1719:16:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 148,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "1719:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 151,
+            "mutability": "mutable",
+            "name": "foraging",
+            "nameLocation": "1748:8:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 154,
+            "src": "1741:15:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 150,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "1741:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 153,
+            "mutability": "mutable",
+            "name": "fishing",
+            "nameLocation": "1769:7:0",
+            "nodeType": "VariableDeclaration",
+            "scope": 154,
+            "src": "1762:14:0",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint16",
+              "typeString": "uint16"
+            },
+            "typeName": {
+              "id": 152,
+              "name": "uint16",
+              "nodeType": "ElementaryTypeName",
+              "src": "1762:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint16",
+                "typeString": "uint16"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "HeroProfessions",
+        "nameLocation": "1678:15:0",
+        "scope": 155,
+        "visibility": "public"
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 0
+}

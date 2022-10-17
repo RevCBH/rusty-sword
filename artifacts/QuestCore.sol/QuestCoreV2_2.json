@@ -1,0 +1,1420 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_heroId",
+          "type": "uint256"
+        }
+      ],
+      "name": "completeQuest",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_account",
+          "type": "address"
+        }
+      ],
+      "name": "getAccountActiveQuests",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "questAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "uint8",
+              "name": "level",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "heroes",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "address",
+              "name": "player",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "startBlock",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "startAtTime",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "completeAtTime",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint8",
+              "name": "attempts",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8",
+              "name": "status",
+              "type": "uint8"
+            }
+          ],
+          "internalType": "struct QuestInfo[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_heroId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getCurrentStamina",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "heroId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getHeroQuest",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "questAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "uint8",
+              "name": "level",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "heroes",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "address",
+              "name": "player",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "startBlock",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "startAtTime",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "completeAtTime",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint8",
+              "name": "attempts",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8",
+              "name": "status",
+              "type": "uint8"
+            }
+          ],
+          "internalType": "struct QuestInfo",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "_heroIds",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "multiCompleteQuest",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "_questAddress",
+          "type": "address[]"
+        },
+        {
+          "internalType": "uint256[][]",
+          "name": "_heroIds",
+          "type": "uint256[][]"
+        },
+        {
+          "internalType": "uint8[]",
+          "name": "_attempts",
+          "type": "uint8[]"
+        },
+        {
+          "internalType": "uint8[]",
+          "name": "_level",
+          "type": "uint8[]"
+        }
+      ],
+      "name": "multiStartQuest",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "completeQuest(uint256)": "528be0a9",
+    "getAccountActiveQuests(address)": "21b77522",
+    "getCurrentStamina(uint256)": "df52458a",
+    "getHeroQuest(uint256)": "204697e4",
+    "multiCompleteQuest(uint256[])": "4e1285bf",
+    "multiStartQuest(address[],uint256[][],uint8[],uint8[])": "9096ac71"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_heroId\",\"type\":\"uint256\"}],\"name\":\"completeQuest\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_account\",\"type\":\"address\"}],\"name\":\"getAccountActiveQuests\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"questAddress\",\"type\":\"address\"},{\"internalType\":\"uint8\",\"name\":\"level\",\"type\":\"uint8\"},{\"internalType\":\"uint256[]\",\"name\":\"heroes\",\"type\":\"uint256[]\"},{\"internalType\":\"address\",\"name\":\"player\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"startBlock\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"startAtTime\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"completeAtTime\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"attempts\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"status\",\"type\":\"uint8\"}],\"internalType\":\"struct QuestInfo[]\",\"name\":\"\",\"type\":\"tuple[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_heroId\",\"type\":\"uint256\"}],\"name\":\"getCurrentStamina\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"heroId\",\"type\":\"uint256\"}],\"name\":\"getHeroQuest\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"questAddress\",\"type\":\"address\"},{\"internalType\":\"uint8\",\"name\":\"level\",\"type\":\"uint8\"},{\"internalType\":\"uint256[]\",\"name\":\"heroes\",\"type\":\"uint256[]\"},{\"internalType\":\"address\",\"name\":\"player\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"startBlock\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"startAtTime\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"completeAtTime\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"attempts\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"status\",\"type\":\"uint8\"}],\"internalType\":\"struct QuestInfo\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256[]\",\"name\":\"_heroIds\",\"type\":\"uint256[]\"}],\"name\":\"multiCompleteQuest\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"_questAddress\",\"type\":\"address[]\"},{\"internalType\":\"uint256[][]\",\"name\":\"_heroIds\",\"type\":\"uint256[][]\"},{\"internalType\":\"uint8[]\",\"name\":\"_attempts\",\"type\":\"uint8[]\"},{\"internalType\":\"uint8[]\",\"name\":\"_level\",\"type\":\"uint8[]\"}],\"name\":\"multiStartQuest\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/QuestCore.sol\":\"QuestCoreV2_2\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"contracts/QuestCore.sol\":{\"keccak256\":\"0x10ca74eca901e4d2031dd5b48e0ce6f661437b42be83e7593d8d248713c2f5d8\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://74b3e5e5b37af26822d1262f476d858c6b1296477575ee27b6bb7bc5e2c67780\",\"dweb:/ipfs/QmdEeamHTtGhdsGGn23uJUNh3xyo1FRJGT5eDUvL45MAdy\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "_heroId",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "completeQuest"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_account",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getAccountActiveQuests",
+          "outputs": [
+            {
+              "internalType": "struct QuestInfo[]",
+              "name": "",
+              "type": "tuple[]",
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "id",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "address",
+                  "name": "questAddress",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint8",
+                  "name": "level",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "uint256[]",
+                  "name": "heroes",
+                  "type": "uint256[]"
+                },
+                {
+                  "internalType": "address",
+                  "name": "player",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "startBlock",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "startAtTime",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "completeAtTime",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint8",
+                  "name": "attempts",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "uint8",
+                  "name": "status",
+                  "type": "uint8"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "_heroId",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getCurrentStamina",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "heroId",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getHeroQuest",
+          "outputs": [
+            {
+              "internalType": "struct QuestInfo",
+              "name": "",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "id",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "address",
+                  "name": "questAddress",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint8",
+                  "name": "level",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "uint256[]",
+                  "name": "heroes",
+                  "type": "uint256[]"
+                },
+                {
+                  "internalType": "address",
+                  "name": "player",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "startBlock",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "startAtTime",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "completeAtTime",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint8",
+                  "name": "attempts",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "uint8",
+                  "name": "status",
+                  "type": "uint8"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256[]",
+              "name": "_heroIds",
+              "type": "uint256[]"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "multiCompleteQuest"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address[]",
+              "name": "_questAddress",
+              "type": "address[]"
+            },
+            {
+              "internalType": "uint256[][]",
+              "name": "_heroIds",
+              "type": "uint256[][]"
+            },
+            {
+              "internalType": "uint8[]",
+              "name": "_attempts",
+              "type": "uint8[]"
+            },
+            {
+              "internalType": "uint8[]",
+              "name": "_level",
+              "type": "uint8[]"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "multiStartQuest"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/QuestCore.sol": "QuestCoreV2_2"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/QuestCore.sol": {
+        "keccak256": "0x10ca74eca901e4d2031dd5b48e0ce6f661437b42be83e7593d8d248713c2f5d8",
+        "urls": [
+          "bzz-raw://74b3e5e5b37af26822d1262f476d858c6b1296477575ee27b6bb7bc5e2c67780",
+          "dweb:/ipfs/QmdEeamHTtGhdsGGn23uJUNh3xyo1FRJGT5eDUvL45MAdy"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/QuestCore.sol",
+    "id": 231,
+    "exportedSymbols": {
+      "QuestCoreV2_2": [
+        208
+      ],
+      "QuestInfo": [
+        230
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:928:1",
+    "nodes": [
+      {
+        "id": 156,
+        "nodeType": "PragmaDirective",
+        "src": "39:24:1",
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 208,
+        "nodeType": "ContractDefinition",
+        "src": "65:663:1",
+        "nodes": [
+          {
+            "id": 165,
+            "nodeType": "FunctionDefinition",
+            "src": "95:117:1",
+            "functionSelector": "21b77522",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getAccountActiveQuests",
+            "nameLocation": "104:22:1",
+            "parameters": {
+              "id": 159,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 158,
+                  "mutability": "mutable",
+                  "name": "_account",
+                  "nameLocation": "135:8:1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 165,
+                  "src": "127:16:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 157,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "127:7:1",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "126:18:1"
+            },
+            "returnParameters": {
+              "id": 164,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 163,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 165,
+                  "src": "192:18:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_QuestInfo_$230_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "struct QuestInfo[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 161,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode": {
+                        "id": 160,
+                        "name": "QuestInfo",
+                        "nameLocations": [
+                          "192:9:1"
+                        ],
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 230,
+                        "src": "192:9:1"
+                      },
+                      "referencedDeclaration": 230,
+                      "src": "192:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_QuestInfo_$230_storage_ptr",
+                        "typeString": "struct QuestInfo"
+                      }
+                    },
+                    "id": 162,
+                    "nodeType": "ArrayTypeName",
+                    "src": "192:11:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_QuestInfo_$230_storage_$dyn_storage_ptr",
+                      "typeString": "struct QuestInfo[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "191:20:1"
+            },
+            "scope": 208,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 170,
+            "nodeType": "FunctionDefinition",
+            "src": "218:49:1",
+            "functionSelector": "528be0a9",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "completeQuest",
+            "nameLocation": "227:13:1",
+            "parameters": {
+              "id": 168,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 167,
+                  "mutability": "mutable",
+                  "name": "_heroId",
+                  "nameLocation": "249:7:1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 170,
+                  "src": "241:15:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 166,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "241:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "240:17:1"
+            },
+            "returnParameters": {
+              "id": 169,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "266:0:1"
+            },
+            "scope": 208,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 176,
+            "nodeType": "FunctionDefinition",
+            "src": "273:66:1",
+            "functionSelector": "4e1285bf",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "multiCompleteQuest",
+            "nameLocation": "282:18:1",
+            "parameters": {
+              "id": 174,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 173,
+                  "mutability": "mutable",
+                  "name": "_heroIds",
+                  "nameLocation": "320:8:1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 176,
+                  "src": "301:27:1",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 171,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "301:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 172,
+                    "nodeType": "ArrayTypeName",
+                    "src": "301:9:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "300:29:1"
+            },
+            "returnParameters": {
+              "id": 175,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "338:0:1"
+            },
+            "scope": 208,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 184,
+            "nodeType": "FunctionDefinition",
+            "src": "345:103:1",
+            "functionSelector": "204697e4",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getHeroQuest",
+            "nameLocation": "354:12:1",
+            "parameters": {
+              "id": 179,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 178,
+                  "mutability": "mutable",
+                  "name": "heroId",
+                  "nameLocation": "375:6:1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 184,
+                  "src": "367:14:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 177,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "367:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "366:16:1"
+            },
+            "returnParameters": {
+              "id": 183,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 182,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 184,
+                  "src": "430:16:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_QuestInfo_$230_memory_ptr",
+                    "typeString": "struct QuestInfo"
+                  },
+                  "typeName": {
+                    "id": 181,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 180,
+                      "name": "QuestInfo",
+                      "nameLocations": [
+                        "430:9:1"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 230,
+                      "src": "430:9:1"
+                    },
+                    "referencedDeclaration": 230,
+                    "src": "430:9:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_QuestInfo_$230_storage_ptr",
+                      "typeString": "struct QuestInfo"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "429:18:1"
+            },
+            "scope": 208,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 191,
+            "nodeType": "FunctionDefinition",
+            "src": "454:76:1",
+            "functionSelector": "df52458a",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getCurrentStamina",
+            "nameLocation": "463:17:1",
+            "parameters": {
+              "id": 187,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 186,
+                  "mutability": "mutable",
+                  "name": "_heroId",
+                  "nameLocation": "489:7:1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 191,
+                  "src": "481:15:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 185,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "481:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "480:17:1"
+            },
+            "returnParameters": {
+              "id": 190,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 189,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 191,
+                  "src": "521:7:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 188,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "521:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "520:9:1"
+            },
+            "scope": 208,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 207,
+            "nodeType": "FunctionDefinition",
+            "src": "536:190:1",
+            "functionSelector": "9096ac71",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "multiStartQuest",
+            "nameLocation": "545:15:1",
+            "parameters": {
+              "id": 205,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 194,
+                  "mutability": "mutable",
+                  "name": "_questAddress",
+                  "nameLocation": "589:13:1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 207,
+                  "src": "570:32:1",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_calldata_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 192,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "570:7:1",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 193,
+                    "nodeType": "ArrayTypeName",
+                    "src": "570:9:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 198,
+                  "mutability": "mutable",
+                  "name": "_heroIds",
+                  "nameLocation": "633:8:1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 207,
+                  "src": "612:29:1",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_array$_t_uint256_$dyn_calldata_ptr_$dyn_calldata_ptr",
+                    "typeString": "uint256[][]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "baseType": {
+                        "id": 195,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "612:7:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "id": 196,
+                      "nodeType": "ArrayTypeName",
+                      "src": "612:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                        "typeString": "uint256[]"
+                      }
+                    },
+                    "id": 197,
+                    "nodeType": "ArrayTypeName",
+                    "src": "612:11:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_array$_t_uint256_$dyn_storage_$dyn_storage_ptr",
+                      "typeString": "uint256[][]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 201,
+                  "mutability": "mutable",
+                  "name": "_attempts",
+                  "nameLocation": "668:9:1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 207,
+                  "src": "651:26:1",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint8_$dyn_calldata_ptr",
+                    "typeString": "uint8[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 199,
+                      "name": "uint8",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "651:5:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint8",
+                        "typeString": "uint8"
+                      }
+                    },
+                    "id": 200,
+                    "nodeType": "ArrayTypeName",
+                    "src": "651:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint8_$dyn_storage_ptr",
+                      "typeString": "uint8[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 204,
+                  "mutability": "mutable",
+                  "name": "_level",
+                  "nameLocation": "704:6:1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 207,
+                  "src": "687:23:1",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint8_$dyn_calldata_ptr",
+                    "typeString": "uint8[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 202,
+                      "name": "uint8",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "687:5:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint8",
+                        "typeString": "uint8"
+                      }
+                    },
+                    "id": 203,
+                    "nodeType": "ArrayTypeName",
+                    "src": "687:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint8_$dyn_storage_ptr",
+                      "typeString": "uint8[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "560:156:1"
+            },
+            "returnParameters": {
+              "id": 206,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "725:0:1"
+            },
+            "scope": 208,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "QuestCoreV2_2",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          208
+        ],
+        "name": "QuestCoreV2_2",
+        "nameLocation": "75:13:1",
+        "scope": 231,
+        "usedErrors": []
+      },
+      {
+        "id": 230,
+        "nodeType": "StructDefinition",
+        "src": "730:236:1",
+        "canonicalName": "QuestInfo",
+        "members": [
+          {
+            "constant": false,
+            "id": 210,
+            "mutability": "mutable",
+            "name": "id",
+            "nameLocation": "761:2:1",
+            "nodeType": "VariableDeclaration",
+            "scope": 230,
+            "src": "753:10:1",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 209,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "753:7:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 212,
+            "mutability": "mutable",
+            "name": "questAddress",
+            "nameLocation": "777:12:1",
+            "nodeType": "VariableDeclaration",
+            "scope": 230,
+            "src": "769:20:1",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 211,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "769:7:1",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 214,
+            "mutability": "mutable",
+            "name": "level",
+            "nameLocation": "801:5:1",
+            "nodeType": "VariableDeclaration",
+            "scope": 230,
+            "src": "795:11:1",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint8",
+              "typeString": "uint8"
+            },
+            "typeName": {
+              "id": 213,
+              "name": "uint8",
+              "nodeType": "ElementaryTypeName",
+              "src": "795:5:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint8",
+                "typeString": "uint8"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 217,
+            "mutability": "mutable",
+            "name": "heroes",
+            "nameLocation": "822:6:1",
+            "nodeType": "VariableDeclaration",
+            "scope": 230,
+            "src": "812:16:1",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+              "typeString": "uint256[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 215,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "812:7:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "id": 216,
+              "nodeType": "ArrayTypeName",
+              "src": "812:9:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                "typeString": "uint256[]"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 219,
+            "mutability": "mutable",
+            "name": "player",
+            "nameLocation": "842:6:1",
+            "nodeType": "VariableDeclaration",
+            "scope": 230,
+            "src": "834:14:1",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 218,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "834:7:1",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 221,
+            "mutability": "mutable",
+            "name": "startBlock",
+            "nameLocation": "862:10:1",
+            "nodeType": "VariableDeclaration",
+            "scope": 230,
+            "src": "854:18:1",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 220,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "854:7:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 223,
+            "mutability": "mutable",
+            "name": "startAtTime",
+            "nameLocation": "886:11:1",
+            "nodeType": "VariableDeclaration",
+            "scope": 230,
+            "src": "878:19:1",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 222,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "878:7:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 225,
+            "mutability": "mutable",
+            "name": "completeAtTime",
+            "nameLocation": "911:14:1",
+            "nodeType": "VariableDeclaration",
+            "scope": 230,
+            "src": "903:22:1",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 224,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "903:7:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 227,
+            "mutability": "mutable",
+            "name": "attempts",
+            "nameLocation": "937:8:1",
+            "nodeType": "VariableDeclaration",
+            "scope": 230,
+            "src": "931:14:1",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint8",
+              "typeString": "uint8"
+            },
+            "typeName": {
+              "id": 226,
+              "name": "uint8",
+              "nodeType": "ElementaryTypeName",
+              "src": "931:5:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint8",
+                "typeString": "uint8"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 229,
+            "mutability": "mutable",
+            "name": "status",
+            "nameLocation": "957:6:1",
+            "nodeType": "VariableDeclaration",
+            "scope": 230,
+            "src": "951:12:1",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint8",
+              "typeString": "uint8"
+            },
+            "typeName": {
+              "id": 228,
+              "name": "uint8",
+              "nodeType": "ElementaryTypeName",
+              "src": "951:5:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint8",
+                "typeString": "uint8"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "QuestInfo",
+        "nameLocation": "737:9:1",
+        "scope": 231,
+        "visibility": "public"
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 1
+}

@@ -1,0 +1,47 @@
+rpc_url = "https://subnets.avax.network/defi-kingdoms/dfk-chain/rpc"
+chain_id = 53935
+
+[core_contracts]
+hero_core = "0xEb9B61B145D6489Be575D3603F4a704810e143dF"
+quest_core = "0xE9AbfBC143d7cef74b5b793ec5907fa62ca53154"
+meditation_circle = "0xD507b6b299d9FC835a0Df92f718920D13fA49B47"
+
+[profession_quests]
+crystal_mining = "0x98b3C85ac3cC3EF36Ff25A9229857AbACE3e7410"
+gold_mining = "0x75912145f5cFEfb980616FA47B2f103210FaAb94"
+fishing = "0x407ab39B3675f29A719476af6eb3B9E5d93969E6"
+foraging = "0xAd51199B453075C73FA106aFcAAD59f705EF7872"
+
+[stat_quests]
+strength = "0xb8828c687Fb1C875D5acb4281C5CDf9F49fA4637"
+intelligence = "0xD8cCf866959830a8E397442B5F7DDD790F230962"
+wisdom = "0x0832A218c2202088A1800D424248fC689ae74600"
+luck = "0x81fA8a2bfcd703dc83c5d4bEE1075899448A5CdE"
+agility = "0x801b7296f106d8818DA1D04Ed769e5a76e8911fe"
+vitality = "0xE3edf52D33F2BB05DBdA5BA73903E27a9B9b7e9d"
+endurance = "0xBD391e4641E1bce989a246602EcDC746efA9d845"
+dexterity = "0x9ec92963d0387bA57D5f2D505319b1c135C6f1D3"
+
+[profession_quests.gardens.0]
+pool_id = "0"
+pair_name = "wJEWEL-xJEWEL"
+lp_address = "0x6AC38A4C112F125eac0eBDbaDBed0BC8F4575d0d"
+quest_address = "0xd3d8ff8e42C2eD51FabE4BA34080C6ac79395f24"
+
+[profession_quests.gardens.1]
+pool_id = "1"
+pair_name = "CRYSTAL-AVAX"
+lp_address = "0x9f378F48d0c1328fd0C80d7Ae544C6CadB5Ba99E"
+quest_address = "0x8eDA0ceA7a90E794B33708Cc0768727A1A612f3d"
+
+[profession_quests.gardens.2]
+pool_id = "2"
+pair_name = "CRYSTAL-wJEWEL"
+lp_address = "0x48658E69D741024b4686C8f7b236D3F1D291f386"
+quest_address = "0xC4839Fb9A5466878168EaE3fD58c647B71475b61"
+
+[profession_quests.gardens.7]
+pool_id = "7"
+pair_name = "CRYSTAL-BTC.b"
+lp_address = "0x00BD81c9bAc29a3b6aea7ABc92d2C9a3366Bb4dD"
+quest_address = "0x706916dbC3b66d89632708CC193080ea05E0534A"

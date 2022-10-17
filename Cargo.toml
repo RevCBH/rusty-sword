@@ -1,0 +1,36 @@
+[package]
+name = "rusty-sword"
+description = "Rusty Sword Quest Runner for DeFi Kingdoms"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ethers-etherscan = { git = "https://github.com/gakonst/ethers-rs" }
+ethers-contract = { git = "https://github.com/gakonst/ethers-rs", features = [
+    "abigen",
+] }
+ethers-core = { git = "https://github.com/gakonst/ethers-rs" }
+ethers-middleware = { git = "https://github.com/gakonst/ethers-rs" }
+ethers-providers = { git = "https://github.com/gakonst/ethers-rs" }
+ethers-signers = { git = "https://github.com/gakonst/ethers-rs" }
+# ethers-utils = { git = "https://github.com/gakonst/ethers-rs", default-features = false }
+
+futures = "0.3"
+eyre = "^0.6.8"
+tokio = { version = "^1.21.1", features = ["full"] }
+tokio-stream = "^0.1.10"
+serde = "^1.0.145"
+serde_json = { version = "^1.0.85" }
+
+num-traits = "0.2"
+num-derive = "0.3"
+
+sqlite = "0.27"
+clap = { version = "4.0", features = ["derive"] }
+confique = "0.1.3"
+
+[build-dependencies]
+foundry-common = { git = "https://github.com/foundry-rs/foundry" }
+foundry-config = { git = "https://github.com/foundry-rs/foundry" }
