@@ -10,10 +10,10 @@ use std::collections::HashMap;
 pub struct Root {
     pub chain_id: u64,
     pub rpc_url: String,
+    pub female_first_names: Vec<String>,
+    pub male_first_names: Vec<String>,
+    pub last_names: Vec<String>,
 
-    // pub female_first_names: Vec<String>,
-    // pub male_first_names: Vec<String>,
-    // pub last_names: Vec<String>,
     #[config(nested)]
     pub core_contracts: CoreContracts,
 
@@ -22,6 +22,9 @@ pub struct Root {
 
     #[config(nested)]
     pub stat_quests: StatQuests,
+
+    // #[config(nested)]
+    pub database: DatabaseConfig,
 }
 
 #[derive(Config, Debug)]
@@ -58,6 +61,12 @@ pub struct GardenQuestInfo {
     pub pair_name: String,
     pub lp_address: Address,
     pub quest_address: Address,
+}
+
+#[derive(Deserialize, Clone, Debug)]
+#[serde(tag = "driver")]
+pub enum DatabaseConfig {
+    SQLite { file: String },
 }
 
 impl Root {

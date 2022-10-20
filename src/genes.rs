@@ -3,19 +3,26 @@ use eyre::{eyre, Result};
 use num_derive::FromPrimitive;
 use num_traits::FromPrimitive;
 
-enum _VisualTrait {
-    Gender,
-    HeadAppendage,
-    BackAppendage,
-    Background,
-    HairStyle,
-    HairColor,
-    VisualUnknown1,
-    EyeColor,
-    SkinColor,
-    AppendageColor,
-    BackAppendageColor,
-    VisualUnknown2,
+#[derive(Clone, Copy, Debug)]
+pub enum Gender {
+    Female,
+    Male,
+}
+
+#[derive(Clone, Copy, Debug)]
+pub struct VisualTraits {
+    pub gender: Gender,
+    // HeadAppendage,
+    // BackAppendage,
+    // Background,
+    // HairStyle,
+    // HairColor,
+    // VisualUnknown1,
+    // EyeColor,
+    // SkinColor,
+    // AppendageColor,
+    // BackAppendageColor,
+    // VisualUnknown2,
 }
 
 #[derive(Clone, Copy, Debug)]
@@ -74,8 +81,8 @@ pub enum BaseStat {
 }
 
 const BASE: usize = 32;
-fn parse_genes(genes: U256) -> Vec<u8> {
-    let mut genes = genes;
+fn parse_genes(genes: &U256) -> Vec<u8> {
+    let mut genes = genes.clone();
     let mut result: Vec<u8> = vec![];
     while genes.ge(&BASE.into()) {
         let (rest, gene) = genes.div_mod(BASE.into());
@@ -92,7 +99,7 @@ fn parse_genes(genes: U256) -> Vec<u8> {
     result
 }
 
-pub fn parse_stat_genes(genes: U256) -> Result<StatTraits> {
+pub fn parse_stat_genes(genes: &U256) -> Result<StatTraits> {
     let genes = parse_genes(genes);
 
     let gene = genes.get(3).ok_or(eyre!("bad index for class gene"))?;
@@ -115,6 +122,16 @@ pub fn parse_stat_genes(genes: U256) -> Result<StatTraits> {
     })
 }
 
+pub fn parse_visual_genes(genes: &U256) -> Result<VisualTraits> {
+    let genes = parse_genes(genes);
+    let gender = match genes.get(0).ok_or(eyre!("bad index for gender gene"))? {
+        1 => Gender::Male,
+        _ => Gender::Female,
+    };
+
+    Ok(VisualTraits { gender: gender })
+}
+
 #[cfg(test)]
 mod tests {
     use ethers_core::types::U256;
@@ -130,7 +147,7 @@ mod tests {
         .expect("bad genes decimal number string");
 
         assert_eq!(
-            parse_genes(genes),
+            parse_genes(&genes),
             vec![
                 1, 4, 7, 0, 5, 2, 6, 7, 0, 4, 2, 6, 5, 4, 5, 0, 4, 6, 3, 7, 0, 6, 2, 2, 6, 0, 3, 6,
                 6, 0, 8, 4, 12, 10, 8, 2, 1, 0, 4, 4, 8, 10, 6, 4, 4, 8, 6, 14
@@ -145,7 +162,7 @@ mod tests {
         )
         .expect("bad genes decimal number string");
 
-        let traits = parse_stat_genes(genes).expect("failed to parse genes");
+        let traits = parse_stat_genes(&genes).expect("failed to parse genes");
 
         assert_eq!(
             traits.class, Warrior,

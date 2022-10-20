@@ -9,6 +9,9 @@ pub type QuestCore<M> = quest_core::QuestCore<M>;
 mod hero_core {
     use ethers_contract::abigen;
     abigen!(HeroCore, "artifacts/HeroCore.sol/HeroCore.json");
+
+    impl Copy for HeroStats {}
+    // impl Clone for HeroStats {}
 }
 
 mod quest_core {
@@ -22,47 +25,4 @@ mod meditation_circle {
         MeditationCircle,
         "artifacts/MeditationCircle.sol/MeditationCircle.json"
     );
-}
-
-impl Hero {
-    pub fn max_stat(&self) -> BaseStat {
-        let mut max_val = self.stats.strength;
-        let mut stat = BaseStat::Strength;
-
-        if self.stats.dexterity > max_val {
-            max_val = self.stats.dexterity;
-            stat = BaseStat::Dexterity;
-        }
-
-        if self.stats.agility > max_val {
-            max_val = self.stats.agility;
-            stat = BaseStat::Agility;
-        }
-
-        if self.stats.vitality > max_val {
-            max_val = self.stats.vitality;
-            stat = BaseStat::Vitality;
-        }
-
-        if self.stats.endurance > max_val {
-            max_val = self.stats.endurance;
-            stat = BaseStat::Endurance;
-        }
-
-        if self.stats.intelligence > max_val {
-            max_val = self.stats.intelligence;
-            stat = BaseStat::Intelligence;
-        }
-
-        if self.stats.wisdom > max_val {
-            max_val = self.stats.wisdom;
-            stat = BaseStat::Wisdom;
-        }
-
-        if self.stats.luck > max_val {
-            stat = BaseStat::Luck;
-        }
-
-        return stat;
-    }
 }

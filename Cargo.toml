@@ -27,7 +27,11 @@ serde_json = { version = "^1.0.85" }
 num-traits = "0.2"
 num-derive = "0.3"
 
-sqlite = "0.27"
+sqlx = { version = "^0.6", features = [
+    "runtime-tokio-rustls",
+    "sqlite",
+    "macros",
+] }
 clap = { version = "4.0", features = ["derive"] }
 confique = "0.1.3"
 

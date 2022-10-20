@@ -1,21 +1,8 @@
 #![feature(drain_filter)]
 #![feature(async_closure)]
 
-mod command_line;
-mod config;
-mod contracts;
-mod genes;
-mod level_up;
-mod quests;
-mod util;
-// use command_line;
-
-use crate::genes::Profession;
 use clap::Parser;
-use command_line::{Cli, Commands};
-use config::Root;
 use confique::Config;
-use contracts::{Hero, HeroCore, QuestCore, QuestInfo};
 use ethers_core::{
     k256::ecdsa::SigningKey,
     types::{Address, U256},
@@ -24,11 +11,20 @@ use ethers_middleware::signer::SignerMiddleware;
 use ethers_providers::{Http, Middleware, Provider};
 use ethers_signers::{LocalWallet, Signer, Wallet};
 use eyre::{eyre, Result, WrapErr};
-use quests::QuestType;
-use std::{collections::HashMap, convert::TryFrom, sync::Arc};
-
-// const DFK_CHAIN_RPC: &str = "https://subnets.avax.network/defi-kingdoms/dfk-chain/rpc";
-// const DFK_CHAIN_ID: u64 = 53935;
+use rusty_sword::{
+    command_line::{Cli, Commands},
+    config,
+    contracts::{HeroCore, QuestCore, QuestInfo},
+    genes::{self, Profession},
+    hero::Hero,
+    level_up,
+    quests::{self, QuestType},
+};
+use sqlx::{
+    sqlite::{SqliteConnectOptions, SqliteJournalMode},
+    ConnectOptions, Connection,
+};
+use std::{collections::HashMap, convert::TryFrom, str::FromStr, sync::Arc};
 
 type ProviderStack = SignerMiddleware<Provider<Http>, Wallet<SigningKey>>;
 
@@ -40,7 +36,7 @@ enum HeroPath {
 
 #[derive(Debug)]
 struct RunnerConfig<'a> {
-    root_config: &'a Root,
+    root_config: &'a config::Root,
     account_address: Address,
     hero_core: HeroCore<ProviderStack>,
     quest_core: Arc<QuestCore<ProviderStack>>,
@@ -51,7 +47,6 @@ struct HeroPlan {
     hero: Hero,
     stamina: u16,
     path: HeroPath, //current_quest: Option<U256>,
-    stat_traits: genes::StatTraits,
 }
 
 #[derive(Debug)]
@@ -201,7 +196,7 @@ impl<'a, M: 'static + Middleware> QuestBatcher<'a, M> {
 }
 
 impl<'a> RunnerConfig<'a> {
-    fn new(wallet: Wallet<SigningKey>, conf: &Root) -> Result<RunnerConfig> {
+    fn new(wallet: Wallet<SigningKey>, conf: &config::Root) -> Result<RunnerConfig> {
         let account_address = wallet.address();
 
         let provider = Provider::<Http>::try_from(conf.rpc_url.as_str())
@@ -243,6 +238,16 @@ impl<'a> RunnerConfig<'a> {
             .call()
             .await?;
 
+        let mut conn = match conf.database.clone() {
+            config::DatabaseConfig::SQLite { file } => {
+                SqliteConnectOptions::from_str(file.as_str())?
+                    .journal_mode(SqliteJournalMode::Wal)
+                    .create_if_missing(true)
+                    .read_only(false)
+                    .connect()
+                    .await?
+            }
+        };
         let mut hero_datas = user_heros.iter().map(|id| self.gather_hero_data(*id));
         let mut questable_heros = vec![];
         let mut meditators = vec![];
@@ -305,9 +310,12 @@ impl<'a> RunnerConfig<'a> {
             }
         });
 
-        let hero = hero_info.ok()?;
-        let stat_genes = hero.info.stat_genes;
+        let hero = Hero::from(&hero_info.ok()?);
         let stamina = hero_stamina.ok()?.try_into().ok()?;
+
+        // println!("{} {}", first_name, last_name);
+        // let h2 = Hero::from(&hero);
+        // println!("{:?}", self.root_config.hero_full_name(&h2));
 
         // println!(
         //     "hero {} xp: {}/{:?}",
@@ -320,8 +328,8 @@ impl<'a> RunnerConfig<'a> {
             if stamina >= 15 {
                 Some(HeroPath::Quest)
             } else {
-                level_up::xp_to_level(hero.state.level).and_then(|required_xp| {
-                    if hero.state.xp == required_xp {
+                level_up::xp_to_level(hero.level).and_then(|required_xp| {
+                    if hero.xp == required_xp {
                         Some(HeroPath::Meditate)
                     } else {
                         None
@@ -336,7 +344,6 @@ impl<'a> RunnerConfig<'a> {
             hero: hero,
             stamina: stamina,
             path: path?,
-            stat_traits: genes::parse_stat_genes(stat_genes).ok()?,
         })
     }
 }
@@ -449,7 +456,7 @@ impl RunnerAnalysis<'_> {
         let mut quest_queue: Vec<(QuestCohort, Vec<HeroPlan>)> = vec![];
 
         for h in self.heros_ready_to_quest.clone() {
-            let profession = h.stat_traits.profession;
+            let profession = h.hero.stat_traits()?.profession;
             let s = (h.stamina / 5) as u8;
             // TODO - make this a config threshold
             if s >= 3 {
@@ -555,11 +562,27 @@ impl RunnerAnalysis<'_> {
 
 #[tokio::main]
 async fn main() -> Result<()> {
-    // let cli = Cli::parse();
     let conf = config::Root::builder()
         .file("config/dfkchain/mainnet.toml")
-        // .file("config/hero_names.toml")
+        .file("config/hero_names.toml")
+        .file("config/db.toml")
         .load()?;
+
+    let mut conn = match conf.database.clone() {
+        config::DatabaseConfig::SQLite { file } => {
+            SqliteConnectOptions::from_str(file.as_str())?
+                .journal_mode(SqliteJournalMode::Wal)
+                .create_if_missing(true)
+                .read_only(false)
+                .connect()
+                .await?
+        }
+    };
+
+    sqlx::migrate!("db/migrations").run(&mut conn).await?;
+    conn.close().await?;
+
+    // let cli = Cli::parse();
 
     // match &cli.command {
     //     Commands::Scan => {
