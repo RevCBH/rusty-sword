@@ -444,10 +444,10 @@
     "getHero(uint256)": "21d80111",
     "getUserHeroes(address)": "cdf7d856"
   },
-  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_id\",\"type\":\"uint256\"}],\"name\":\"getHero\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"components\":[{\"internalType\":\"uint256\",\"name\":\"summonedTime\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"nextSummonTime\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"summonerId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"assistantId\",\"type\":\"uint256\"},{\"internalType\":\"uint32\",\"name\":\"summons\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"maxSummons\",\"type\":\"uint32\"}],\"internalType\":\"struct SummoningInfo\",\"name\":\"summoningInfo\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"uint256\",\"name\":\"statGenes\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"visualGenes\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"rarity\",\"type\":\"uint8\"},{\"internalType\":\"bool\",\"name\":\"shiny\",\"type\":\"bool\"},{\"internalType\":\"uint16\",\"name\":\"generation\",\"type\":\"uint16\"},{\"internalType\":\"uint32\",\"name\":\"firstName\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"lastName\",\"type\":\"uint32\"},{\"internalType\":\"uint8\",\"name\":\"shinyStyle\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"class\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"subClass\",\"type\":\"uint8\"}],\"internalType\":\"struct HeroInfo\",\"name\":\"info\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"uint256\",\"name\":\"staminaFullAt\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"hpFullAt\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"mpFullAt\",\"type\":\"uint256\"},{\"internalType\":\"uint16\",\"name\":\"level\",\"type\":\"uint16\"},{\"internalType\":\"uint64\",\"name\":\"xp\",\"type\":\"uint64\"},{\"internalType\":\"address\",\"name\":\"currentQuest\",\"type\":\"address\"},{\"internalType\":\"uint8\",\"name\":\"sp\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"status\",\"type\":\"uint8\"}],\"internalType\":\"struct HeroState\",\"name\":\"state\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"uint16\",\"name\":\"strength\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"intelligence\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"wisdom\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"luck\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"agility\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"vitality\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"endurance\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"dexterity\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"hp\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"mp\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"stamina\",\"type\":\"uint16\"}],\"internalType\":\"struct HeroStats\",\"name\":\"stats\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"uint16\",\"name\":\"strength\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"intelligence\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"wisdom\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"luck\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"agility\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"vitality\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"endurance\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"dexterity\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"hpSm\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"hpRg\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"hpLg\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"mpSm\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"mpRg\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"mpLg\",\"type\":\"uint16\"}],\"internalType\":\"struct HeroStatGrowth\",\"name\":\"primaryStatGrowth\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"uint16\",\"name\":\"strength\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"intelligence\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"wisdom\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"luck\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"agility\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"vitality\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"endurance\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"dexterity\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"hpSm\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"hpRg\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"hpLg\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"mpSm\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"mpRg\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"mpLg\",\"type\":\"uint16\"}],\"internalType\":\"struct HeroStatGrowth\",\"name\":\"secondaryStatGrowth\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"uint16\",\"name\":\"mining\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"gardening\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"foraging\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"fishing\",\"type\":\"uint16\"}],\"internalType\":\"struct HeroProfessions\",\"name\":\"professions\",\"type\":\"tuple\"}],\"internalType\":\"struct Hero\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"getUserHeroes\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/HeroCore.sol\":\"HeroCore\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"contracts/HeroCore.sol\":{\"keccak256\":\"0x5e450de431a29846999927c5cbda774dff399d443c67c312f888fdd7ef51ee68\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://db0f85aa3096a1894d0a4ff0dcf1fd66f3f4074bed174e429ef9561c2827c1e6\",\"dweb:/ipfs/QmX3M8GDLonW1TzY6tYLS47yL5SCZssReAagkEsEWPgXHw\"]}},\"version\":1}",
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_id\",\"type\":\"uint256\"}],\"name\":\"getHero\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"components\":[{\"internalType\":\"uint256\",\"name\":\"summonedTime\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"nextSummonTime\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"summonerId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"assistantId\",\"type\":\"uint256\"},{\"internalType\":\"uint32\",\"name\":\"summons\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"maxSummons\",\"type\":\"uint32\"}],\"internalType\":\"struct SummoningInfo\",\"name\":\"summoningInfo\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"uint256\",\"name\":\"statGenes\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"visualGenes\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"rarity\",\"type\":\"uint8\"},{\"internalType\":\"bool\",\"name\":\"shiny\",\"type\":\"bool\"},{\"internalType\":\"uint16\",\"name\":\"generation\",\"type\":\"uint16\"},{\"internalType\":\"uint32\",\"name\":\"firstName\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"lastName\",\"type\":\"uint32\"},{\"internalType\":\"uint8\",\"name\":\"shinyStyle\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"class\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"subClass\",\"type\":\"uint8\"}],\"internalType\":\"struct HeroInfo\",\"name\":\"info\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"uint256\",\"name\":\"staminaFullAt\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"hpFullAt\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"mpFullAt\",\"type\":\"uint256\"},{\"internalType\":\"uint16\",\"name\":\"level\",\"type\":\"uint16\"},{\"internalType\":\"uint64\",\"name\":\"xp\",\"type\":\"uint64\"},{\"internalType\":\"address\",\"name\":\"currentQuest\",\"type\":\"address\"},{\"internalType\":\"uint8\",\"name\":\"sp\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"status\",\"type\":\"uint8\"}],\"internalType\":\"struct HeroState\",\"name\":\"state\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"uint16\",\"name\":\"strength\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"intelligence\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"wisdom\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"luck\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"agility\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"vitality\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"endurance\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"dexterity\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"hp\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"mp\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"stamina\",\"type\":\"uint16\"}],\"internalType\":\"struct HeroStats\",\"name\":\"stats\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"uint16\",\"name\":\"strength\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"intelligence\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"wisdom\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"luck\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"agility\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"vitality\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"endurance\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"dexterity\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"hpSm\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"hpRg\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"hpLg\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"mpSm\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"mpRg\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"mpLg\",\"type\":\"uint16\"}],\"internalType\":\"struct HeroStatGrowth\",\"name\":\"primaryStatGrowth\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"uint16\",\"name\":\"strength\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"intelligence\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"wisdom\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"luck\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"agility\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"vitality\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"endurance\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"dexterity\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"hpSm\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"hpRg\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"hpLg\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"mpSm\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"mpRg\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"mpLg\",\"type\":\"uint16\"}],\"internalType\":\"struct HeroStatGrowth\",\"name\":\"secondaryStatGrowth\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"uint16\",\"name\":\"mining\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"gardening\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"foraging\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"fishing\",\"type\":\"uint16\"}],\"internalType\":\"struct HeroProfessions\",\"name\":\"professions\",\"type\":\"tuple\"}],\"internalType\":\"struct Hero\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"getUserHeroes\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/HeroCore.sol\":\"HeroCore\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"contracts/HeroCore.sol\":{\"keccak256\":\"0x5e450de431a29846999927c5cbda774dff399d443c67c312f888fdd7ef51ee68\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://db0f85aa3096a1894d0a4ff0dcf1fd66f3f4074bed174e429ef9561c2827c1e6\",\"dweb:/ipfs/QmX3M8GDLonW1TzY6tYLS47yL5SCZssReAagkEsEWPgXHw\"]}},\"version\":1}",
   "metadata": {
     "compiler": {
-      "version": "0.8.17+commit.8df45f5f"
+      "version": "0.8.13+commit.abaa5c0e"
     },
     "language": "Solidity",
     "output": {
@@ -1132,9 +1132,6 @@
                     "pathNode": {
                       "id": 13,
                       "name": "Hero",
-                      "nameLocations": [
-                        "255:4:0"
-                      ],
                       "nodeType": "IdentifierPath",
                       "referencedDeclaration": 42,
                       "src": "255:4:0"
@@ -1225,9 +1222,6 @@
               "pathNode": {
                 "id": 21,
                 "name": "SummoningInfo",
-                "nameLocations": [
-                  "306:13:0"
-                ],
                 "nodeType": "IdentifierPath",
                 "referencedDeclaration": 55,
                 "src": "306:13:0"
@@ -1262,9 +1256,6 @@
               "pathNode": {
                 "id": 24,
                 "name": "HeroInfo",
-                "nameLocations": [
-                  "339:8:0"
-                ],
                 "nodeType": "IdentifierPath",
                 "referencedDeclaration": 76,
                 "src": "339:8:0"
@@ -1299,9 +1290,6 @@
               "pathNode": {
                 "id": 27,
                 "name": "HeroState",
-                "nameLocations": [
-                  "358:9:0"
-                ],
                 "nodeType": "IdentifierPath",
                 "referencedDeclaration": 93,
                 "src": "358:9:0"
@@ -1336,9 +1324,6 @@
               "pathNode": {
                 "id": 30,
                 "name": "HeroStats",
-                "nameLocations": [
-                  "379:9:0"
-                ],
                 "nodeType": "IdentifierPath",
                 "referencedDeclaration": 116,
                 "src": "379:9:0"
@@ -1373,9 +1358,6 @@
               "pathNode": {
                 "id": 33,
                 "name": "HeroStatGrowth",
-                "nameLocations": [
-                  "400:14:0"
-                ],
                 "nodeType": "IdentifierPath",
                 "referencedDeclaration": 145,
                 "src": "400:14:0"
@@ -1410,9 +1392,6 @@
               "pathNode": {
                 "id": 36,
                 "name": "HeroStatGrowth",
-                "nameLocations": [
-                  "438:14:0"
-                ],
                 "nodeType": "IdentifierPath",
                 "referencedDeclaration": 145,
                 "src": "438:14:0"
@@ -1447,9 +1426,6 @@
               "pathNode": {
                 "id": 39,
                 "name": "HeroProfessions",
-                "nameLocations": [
-                  "478:15:0"
-                ],
                 "nodeType": "IdentifierPath",
                 "referencedDeclaration": 154,
                 "src": "478:15:0"

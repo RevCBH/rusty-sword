@@ -15,6 +15,7 @@ use rusty_sword::{
     command_line::{Cli, Commands},
     config,
     contracts::{HeroCore, QuestCore, QuestInfo},
+    database,
     genes::{self, Profession},
     hero::Hero,
     level_up,
@@ -238,22 +239,14 @@ impl<'a> RunnerConfig<'a> {
             .call()
             .await?;
 
-        let mut conn = match conf.database.clone() {
-            config::DatabaseConfig::SQLite { file } => {
-                SqliteConnectOptions::from_str(file.as_str())?
-                    .journal_mode(SqliteJournalMode::Wal)
-                    .create_if_missing(true)
-                    .read_only(false)
-                    .connect()
-                    .await?
-            }
-        };
+        let mut conn = database::connect_sqlite(&self.root_config.database.clone()).await?;
         let mut hero_datas = user_heros.iter().map(|id| self.gather_hero_data(*id));
         let mut questable_heros = vec![];
         let mut meditators = vec![];
         while let Some(d) = hero_datas.next() {
             match d.await {
                 Some(plan) => match plan.path {
+                    //  plan.hero
                     HeroPath::Quest => {
                         questable_heros.push(plan);
                     }

@@ -51,6 +51,7 @@ pub enum Class {
     Wizard = 5,
     Monk = 6,
     Pirate = 7,
+    Class8 = 8,
     Paladin = 16,
     DarkKnight = 17,
     Summoner = 18,

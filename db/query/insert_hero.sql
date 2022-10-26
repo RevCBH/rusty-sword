@@ -1,0 +1,33 @@
+INSERT INTO heros (
+    id,
+    visual_genes,
+    stat_genes,
+    first_name,
+    last_name,
+    "level",
+    xp,
+    strength,
+    dexterity,
+    agility,
+    vitality,
+    endurance,
+    intelligence,
+    wisdom,
+    luck
+) VALUES (
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?,
+    ?
+)
